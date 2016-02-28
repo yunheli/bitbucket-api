@@ -1,0 +1,1 @@
+exports.Auth = require("./lib/auth.js")

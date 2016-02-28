@@ -1,0 +1,27 @@
+{
+  "name": "bitbucket_api",
+  "version": "1.0.0",
+  "description": "bitbucket api",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/yunheli/bitbucket-api.git"
+  },
+  "keywords": [
+    "bitbucket",
+    "bitbucket-api"
+  ],
+  "author": "willcoding <liyunhehappy6@gmail.com> (http://willcoding.lofter.com/)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yunheli/bitbucket-api/issues"
+  },
+  "homepage": "https://github.com/yunheli/bitbucket-api#readme",
+  "dependencies": {
+    "mocha": "^2.4.5",
+    "request": "^2.69.0"
+  }
+}
