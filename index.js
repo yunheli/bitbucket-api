@@ -1,1 +1,4 @@
-exports.Auth = require("./lib/auth.js")
+var API = require("./lib/auth")
+
+
+module.exports = API;

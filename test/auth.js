@@ -1,4 +1,4 @@
-var Auth = require("../index").Auth
+var Auth = require("../index")
 var assert = require('assert');
 var auth;
 var client_id = "S6vLxDGqKUuNG68Sr3", secret = "MjNCNNvjV3BTeMyCm6TxQZLpvSTjaUgZ" ;
