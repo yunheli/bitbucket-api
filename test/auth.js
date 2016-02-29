@@ -11,9 +11,8 @@ describe('Array', function() {
     it('should return -1 when the value is not present', function (done) {
       assert.equal(-1, [1,2,3].indexOf(5));
       assert.equal(-1, [1,2,3].indexOf(0));
-      auth.get_access_token("DwJTvQ4YQv4ky8jmyW",function(err, res, body){
-
-        console.log(err, res, body)
+      auth.get_access_token("invalid_grant",function(err, res, body){
+        console.log(auth.generate_authorize_url())
         done()
       })
     });
