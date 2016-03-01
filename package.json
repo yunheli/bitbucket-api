@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/yunheli/bitbucket-api#readme",
   "dependencies": {
+    "expect.js": "^0.3.1",
     "mocha": "^2.4.5",
     "request": "^2.69.0"
   }
