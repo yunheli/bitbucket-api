@@ -3,7 +3,7 @@ var assert = require('assert');
 var auth;
 var client_id = "S6vLxDGqKUuNG68Sr3", secret = "MjNCNNvjV3BTeMyCm6TxQZLpvSTjaUgZ" ;
 beforeEach(function() {
-  return auth = new Auth(client_id, secret)
+  return auth = new Auth(client_id, secret, null, null)
 });
 
 describe('Array', function() {
@@ -11,9 +11,13 @@ describe('Array', function() {
     it('should return -1 when the value is not present', function (done) {
       assert.equal(-1, [1,2,3].indexOf(5));
       assert.equal(-1, [1,2,3].indexOf(0));
-      auth.get_access_token("2ZvpnNYWWWUBLnYJA9",function(err, res, body){
-        console.log(auth.generateAuthorizeUrl())
-        done()
+      console.log(auth.generateAuthorizeUrl())
+      auth.getAccessToken("BfZ8qLwjdUf5AR8FqX",function(err, res, body){
+        auth.userProfile(function(err, body){
+          console.log("........", err, body)
+          done()
+        })
+
       })
     });
   });
